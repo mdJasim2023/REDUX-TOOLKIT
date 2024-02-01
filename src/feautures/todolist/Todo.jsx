@@ -7,7 +7,7 @@ function Todo(){
     let dispatch = useDispatch()
     let [newTodo,setNewTodo] = React.useState('')
     return(
-        <div className="border border-inf0 p-3 m-3">
+        <div className="border border-info p-3 m-3">
             <h1>Todolist :</h1>
             <input type="text" onChange={(e)=>{setNewTodo(e.target.value)}}/>
             <button onClick={()=>{dispatch(addtask(newTodo))}}>AddTask</button>

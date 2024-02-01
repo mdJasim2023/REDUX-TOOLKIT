@@ -12,9 +12,10 @@ export const todoSlice = createSlice({
             state.todos.push(action.payload)
         },
         deleteTodo:(state,action)=>{
+            console.log(action.index)
             let temp = [...state.todos]
-            temp.splice(action.payload.index,1)
-            state.todos=[...temp]
+            temp.splice(action.index,1)
+            state.todos = [...temp]
         }
     }
 }) 
