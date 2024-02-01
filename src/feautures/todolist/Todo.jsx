@@ -16,7 +16,7 @@ function Todo(){
                     todos.map((t,i)=>{
                         return <li>
                                     {t}
-                                    <button className="btn btn-danger" onClick={()=>{deleteTodo({})}}>Delete</button>
+                                    <button className="btn btn-danger" onClick={()=>{deleteTodo({index:i})}}>Delete</button>
                                 </li>
                     })
                 }
