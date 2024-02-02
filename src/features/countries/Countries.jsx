@@ -1,9 +1,5 @@
 import React from "react";
-import { useGetAllCountriesQuerry } from "../../services/countriesApi";
-function Countries(){
-    let c = useGetAllCountriesQuerry()
-    console.log(c);
-   
+function Countries(){   
     return (
         <div>
             <h1>Countries:</h1>

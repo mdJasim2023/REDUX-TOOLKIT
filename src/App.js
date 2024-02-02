@@ -1,14 +1,14 @@
 
 import Countries from './features/countries/Countries';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
+import Counter from './features/counter/Counter';
+import Todo from './features/todolist/Todo';
 
 function App() {
   return (
     <div className="App">
-      <Provider store={store}>
-          <Countries></Countries>
-      </Provider>
+        <Counter></Counter>
+        <Todo></Todo>
+        <Countries></Countries>
     </div>
   );
 }
