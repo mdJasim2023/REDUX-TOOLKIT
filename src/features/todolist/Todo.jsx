@@ -15,8 +15,7 @@ function Todo(){
                 {
                     value.map((t,i)=>{
                         return <li>{t}
-                        {t.dn && <button className="btn btn-danger" onClick={()=>{dispatch(deltask({index:i}))}}>Delete</button>}
-                        {!t.dn && <button className="btn btn-success">Done</button>}
+                        <button className="btn btn-danger" onClick={()=>{dispatch(deltask({index:i}))}}>Delete</button>
                         </li>
                     })
                 }
