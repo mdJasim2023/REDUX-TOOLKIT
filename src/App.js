@@ -1,20 +1,19 @@
 
 import './App.css';
 import CounterA from './features/counter/Counter';
+import Countries from './features/countries/Countries';
+import Products from './features/products/Products';
 import Todo from './features/todolist/Todo';
 function App() {
   return (
-    <div className="border border-success m-2 p-5 d-flex">
-      <div className='w-50'>
-        <h1 className='text-primary p-2'>Counter Application</h1>
+    <div className='border border-5 p-5 m-2 border-info'>
+      <h1>WELCOME TO RTK SERVICES</h1>
+      <div className="border border-success m-2 p-">
+        <Products></Products>
+        <Countries></Countries>
         <CounterA></CounterA>
-      </div>
-      <div className='w-50'>
-        <h1 className='text-info p-2 m-1'>Todo-List Application</h1>
         <Todo></Todo>
-      </div>
-        
-        
+    </div>
     </div>
   );
 }
