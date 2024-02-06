@@ -1,20 +1,34 @@
 {
-    "posts": [
-      { "id": "1", "title": "HTML", "author":"SINDHU MADAM" },
-      { "id": "2", "title": "CSS", "author":"NARESH" },
-      { "id": "3", "title": "JAVASCRIPT", "author":"MURARI" },
-      { "id": "4", "title": "REACTJS", "author":"SANJEE" },
-      { "id": "5", "title": "REDUX", "author":"KARIM" },
-      { "id": "6", "title": "TOOLKIT", "author":"JASIM" },
-      { "id": "7", "title": "AXIOS", "author":"NAIDU" },
-      { "id": "8", "title": "JAVA", "author":"RAM" }
-      
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
+  "posts": [
+    {
+      "id": "9398",
+      "title": "jasiM",
+      "author": "56"
+    },
+    {
+      "id": "852e",
+      "title": "Karimm",
+      "author": "56"
+    },
+    {
+      "id": "b13d",
+      "title": "ramyan hj",
+      "author": "484.03"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": null
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": null
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
