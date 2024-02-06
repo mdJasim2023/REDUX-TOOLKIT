@@ -1,11 +1,9 @@
 import Dream from './features/Dream-11/Dream-11';
-import P from './features/practice/p';
-
+import './App.css'
 function App() {
   return (
-    <div className="App">
+    <div className="border border-danger p-3 m-2">
       <Dream></Dream>
-      <P></P>
     </div>
   );
 }

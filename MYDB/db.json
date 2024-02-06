@@ -1,0 +1,15 @@
+{
+    "Dream11" : [
+        {"id" : 1 , "player" : "Rohit Sharma" , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 2 , "player" : "Hardik Pandya " , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 3 , "player" : "Bumrah " , "Role" : "Bowler" , "Team" : "India" },
+        {"id" : 4 , "player" : "Virat Kohli" , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 5 , "player" : "K L Rahul " , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 6 , "player" : "Subman Gill " , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 7 , "player" : "Iyer " , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 8 , "player" : "Dawan" , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 9 , "player" : "Sanju" , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 10 , "player" : "Surya" , "Role" : "Batsman" , "Team" : "India" },
+        {"id" : 11 , "player" : "Shami" , "Role" : "Bowler" , "Team" : "India" }
+    ]   
+}
