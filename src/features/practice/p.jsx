@@ -1,6 +1,7 @@
 import axios from "axios";
-import React from "react";
+import React, { useRef } from "react";
 import { useEffect } from "react";
+import Data from "./data";
 
 function P(){
     let [dat,setDat] = React.useState([])
@@ -13,6 +14,7 @@ function P(){
         })
     })
     function addBook(){
+        <Data></Data>
         axios.post('http://localhost:4000/posts',newitem).then((res)=>{console.log(res.data)})
     }
     
@@ -33,8 +35,8 @@ function P(){
         <div>
             {!isFlag && <div className="shadow rounded p-5  w-25" style={{margin:'100px auto'}}>
                 <h1 className="text-center text-info">Add New Post</h1>
-                <input type="text"  placeholder="Enter Title name " className="m-2 p-2 form-control" onChange={(e)=>{setNewitem({...newitem,title:e.target.value})}}/>
-                <input type="text" placeholder="Enter Author name" className="m-2 p-2 form-control" onChange={(e)=>{setNewitem({...newitem,author:e.target.value})}}/>
+                <input type="text" placeholder="Enter Title name " className="m-2 p-2 form-control" onChange={(e)=>{setNewitem({...newitem,title:e.target.value})}}/>
+                <input type="text" placeholder="Enter Author name" className="m-2 p-2 form-control"  onChange={(e)=>{setNewitem({...newitem,author:e.target.value})}}/>
                 <button className="btn btn-success m-2 form-control" onClick={()=>{addBook()}}>AddPost</button>
             </div>}
             {isFlag && <div className="shadow rounded p-5  w-25" style={{margin:'100px auto'}}>
@@ -52,13 +54,14 @@ function P(){
                             <h6><b>Id :</b> {a.id}</h6>
                             <h6><b>Author :</b> {a.author}</h6>
                             <button className="btn btn-danger" onClick={()=>{delPost(a.id)}}>Delete</button>
-                            <button className="btn btn-warning m-1" onClick={()=>{updatepost(a)}}>Edit</button>
+                            <button className="btn btn-warning m-1" onClick={()=>{updatepost(a)}}>Edit</button> 
                         </div>
                     )
                 })
             }
             
             </div>
+            
         </div>
     )
 }
