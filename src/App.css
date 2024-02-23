@@ -1,4 +1,29 @@
-.shadow{
+.HeaderFrom{
   width: 35%;
-  margin: 7% auto;
+  margin: auto;
+  box-shadow: 5px 5px 30px cadetblue;
+}
+.titlehead h1{
+  letter-spacing: 10px;
+  color:crimson;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 5px 5px 5px black;
+  font-size: 5rem;
+}
+
+.titlehead span{
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+
+#d1 {animation-timing-function: linear;}
+#d2 {animation-timing-function: ease;}
+#d3 {animation-timing-function: ease-in;}
+#d4 {animation-timing-function: ease-out;}
+#d5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 100px;}
+  to {left: 400px;}
 }

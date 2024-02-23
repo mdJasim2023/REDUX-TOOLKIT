@@ -1,8 +1,11 @@
 import { useFormik } from "formik";
 import React from "react";
+import { useGetHeaderMutation } from "../services/jsonApi";
+import { Link, useNavigate } from "react-router-dom";
 
-function HeaderForm(){
-
+function Part1(){
+    let [data] = useGetHeaderMutation()
+    let nav = useNavigate()
     let formik = useFormik({
         initialValues:{
             fn:'',
@@ -16,14 +19,17 @@ function HeaderForm(){
         },
 
         onSubmit:(values)=>{
-            console.log(values)
+            data(values).then((res)=>{
+                console.log(res);
+            })
         }
 
     })
+    let show = false;
     return(
         <div className="p-5">
-            <h1 className="text-center">Header Section</h1>
-            <form className="p-5 rounded shadow" onSubmit={formik}>
+            <form className="p-5 rounded HeaderFrom" onSubmit={formik.handleSubmit}>
+                <h1 className="text-center text-warning">PART - 1</h1><br />
                 <div className="d-flex">
                     <input type="text" className="form-control w-50" name='fn' onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter First Name"/>
                     &nbsp;&nbsp;
@@ -44,13 +50,13 @@ function HeaderForm(){
                     &nbsp;&nbsp;
                     <input type="date" className="form-control w-50" name="date" onChange={formik.handleChange} onBlur={formik.handleBlur}/>
                 </div><br />
-                <div className="d-flex justify-content-between container">
-                    {/* <button className="btn btn-warning">Back</button> */}
-                    <button className="btn btn-success">Next</button>
+                <div className="d-flex justify-content-between">
+                    <button className="btn btn-warning"> Back</button>
+                   <Link to='/part2'><button className="btn btn-success" type="submit">Next </button></Link>
                 </div>
             </form>
         </div>
     )
 }
 
-export default HeaderForm
+export default Part1

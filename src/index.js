@@ -7,19 +7,33 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+import Part2 from './MyComponents/Part2';
+import Part1 from './MyComponents/Part1';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    children:[
+      {
+        path:'/',
+        element:<Part1></Part1>
+      },
+      {
+        path:'/part2',
+        element:<Part2></Part2>
+      }
+    ]
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <Provider store={store}>
+      <RouterProvider router={router} />
+  </Provider>
 
   
 );
