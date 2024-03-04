@@ -1,7 +1,10 @@
 .HeaderFrom{
   width: 35%;
-  margin: auto;
+  margin: 4% auto;
   box-shadow: 5px 5px 30px cadetblue;
+}
+.HeaderFrom h1{
+   letter-spacing: 5px;
 }
 .titlehead h1{
   letter-spacing: 10px;
@@ -9,6 +12,13 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 5px 5px 5px black;
   font-size: 5rem;
+  margin-top:12%;
+}
+label{
+  color: darkblue;
+}
+textarea{
+  border-color: darkblue;
 }
 
 .titlehead span{
@@ -26,4 +36,8 @@
 @keyframes mymove {
   from {left: 100px;}
   to {left: 400px;}
+}
+
+h4{
+  color:rgb(90, 173, 176);
 }

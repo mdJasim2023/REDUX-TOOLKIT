@@ -5,6 +5,7 @@ import { resumeApi } from '../services/jsonApi'
 
 export const store = configureStore({
   reducer: {
+    [resumeApi.reducerPath]:resumeApi.reducer
   },
   middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware().concat(resumeApi.middleware),

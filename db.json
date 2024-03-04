@@ -1,15 +1,63 @@
 {
-  "HeaderForm": [
+  "part1": [
     {
-      "id": "8ad6",
+      "id": "d9bb",
       "fn": "jasim",
       "ln": "mohammad",
       "role": "front-end developer",
       "exp": "fresher",
       "mail": "jasim127md@gmail.com",
       "phone": 6300530399,
-      "address": "Mogaltur , near Petrol bunk",
-      "date": "2024-02-05"
+      "address": "Mogaltur",
+      "linkedIn": "https://www.linkedin.com/in/jasim-mohammad-b01538258/"
+    }
+  ],
+  "part2": [
+    {
+      "id": "8687",
+      "obj": "A good objective for a resume is a concise statement that highlights your career goals and how you intend to contribute to the prospective employer A good objective for a resume is a concise statement that highlights your career goals and how you intend to contribute to the prospective employer A good objective for a resume.",
+      "ps": "A resume summary for freshers should include your value proposition, a brief introduction, significant job-related abilities, notable experiences or successes, and career aspirations. It must be concise, very specific, and customized for the particular position you're looking for A resume summary for freshers should include your value proposition, a brief introduction, significant job-related abilities, notable experiences or successes, and career aspirations. It must be concise, very specific, and customized for the particular position you're looking forA resume summary for freshers should include your value proposition.",
+      "intern": "Completed ReactJS internship from Edupoly Solutions Private Limited (oct 2023 - Jan 2024)Completed daily tasks and assignments related to HTML and CSS.Learnt Bootstrap framework for responsive web design.Built advanced logic and made interactive websites with JavaScript.Well trained in ReactJS library and also completed several projects."
+    }
+  ],
+  "part3": [
+    {
+      "id": "d94d",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ReactJS",
+        "Bootstrap",
+        "Redux",
+        "Redux-Toolkit"
+      ],
+      "projects": "1. Shopping E-commerce Application:Implemented a general-purpose ecommerce store where any kind of product can be bought from the comfort of home •through the Internet.Developed the front-end web application by using ReactJS library, Redux, JavaScript, CSS, HTML & Bootstrap.Managed form validations using Formik and Yup library.Generated responsive design with media queries in CSS.Fetched data from server by using Axios based Restful APIs.Implemented routing using react-router.Fetched data from server by using Axios. Calculator:Created an HTML."
+    }
+  ],
+  "part4": [
+    {
+      "id": "0183",
+      "graduation": " Bachelor’s Degree in Electronics from Sri Y N College (Adikavi Nannaya University) (2020-2023).",
+      "intermediate": " Intermediate in MPC from Gowthami Junior College in Narasapur.",
+      "ssc": "SSC from Pratibha E.M High School in Mogaltur"
+    }
+  ],
+  "part5": [
+    {
+      "id": "daca",
+      "name": "Jasim Mohammad",
+      "dob": "27-06-2002",
+      "gender": "male",
+      "languages": "English , Hindi , Telugu"
+    }
+  ],
+  "final": [
+    {
+      "id": "f593",
+      "declaration": "I hereby declare that the above information is true to the best of my knowledge and belief.",
+      "city": "Mogaltur",
+      "sign": "Md.Jasim"
     }
   ]
 }
